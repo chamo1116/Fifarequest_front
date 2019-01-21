@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
+import Players from './components/Players/Players';
 import Particles from 'react-particles-js';
 import './App.css';
 
@@ -59,6 +60,7 @@ class App extends Component {
            <Navigation isSignedIn={isSignedIn} onRouteChange= {this.onRouteChange}/>
            { route === 'home' 
               ? <div>
+                <Players/>
                 </div>               
               : (
                   route === 'signin' 
