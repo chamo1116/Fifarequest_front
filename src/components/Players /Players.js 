@@ -1,0 +1,54 @@
+import React from 'react';
+class Players extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			picture: '',
+			name: '',
+			lastName: '',
+			birthDate: '',
+			positionPlayer: '',
+			numberPlayer: '',
+			headLine: '',
+		}
+		this.players = []
+	}
+
+	onPictureChange = (event) => {
+		this.setState({picture: event.target.value})
+	}
+
+	onNameChange = (event) => {
+		this.setState({name: event.target.value})
+	}
+
+	onLastNameChange = (event) => {
+		this.setState({lastName: event.target.value})
+	}
+
+	onBirthDate = (event) => {
+		this.setState({birthDate: event.target.value})
+	}
+
+	onPositionChange = (event) => {
+		this.setState({positionPlayer: event.target.value})
+	}
+
+	onNumberPlayer = (event) => {
+		this.setState({numberPlayer: event.target.value})
+	}
+
+	onHeadlineChange = (event) => {
+		this.setState({headLine: event.target.value})
+	}
+
+	onAddPlayer = () => {
+		this.players.push = [this.state.picture, this.state.name, this.state.lastName, this.state.birthDate, 
+							this.state.positionPlayer, this.state.headLine]
+
+	}
+
+
+
+}
+export default Players;
